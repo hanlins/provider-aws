@@ -11,6 +11,7 @@ require (
 	github.com/go-ini/ini v1.46.0
 	github.com/google/go-cmp v0.5.5
 	github.com/mitchellh/copystructure v1.0.0
+	github.com/nsf/jsondiff v0.0.0-20210303162244-6ea32392771e
 	github.com/onsi/gomega v1.13.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.7.0
