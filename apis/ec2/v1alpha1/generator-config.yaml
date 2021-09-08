@@ -68,3 +68,6 @@ ignore:
     - DeleteVpcPeeringConnectionInput.PeerVPCID
     - RejectVpcPeeringConnectionInput.PeerVPCID
     - AcceptVpcPeeringConnectionInput.PeerVPCID
+    - CreateVpcEndpointInput.VpcId
+    - ModifyVpcEndpointInput.VpcId
+    - DeleteVpcEndpointInput.VpcId
