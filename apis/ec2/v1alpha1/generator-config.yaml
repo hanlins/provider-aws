@@ -71,3 +71,4 @@ ignore:
     - CreateVpcEndpointInput.VpcId
     - ModifyVpcEndpointInput.VpcId
     - DeleteVpcEndpointInput.VpcId
+    - Subnet.AvailableIpAddressCount

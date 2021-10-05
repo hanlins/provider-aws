@@ -3148,8 +3148,6 @@ type Subnet struct {
 
 	AvailabilityZoneID *string `json:"availabilityZoneID,omitempty"`
 
-	AvailableIPAddressCount *int64 `json:"availableIPAddressCount,omitempty"`
-
 	CIDRBlock *string `json:"cidrBlock,omitempty"`
 
 	DefaultForAZ *bool `json:"defaultForAZ,omitempty"`

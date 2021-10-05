@@ -28,9 +28,6 @@ spec:
             type: string
           availabilityZoneID:
             type: string
-          availableIPAddressCount:
-            format: int64
-            type: integer
           cidrBlock:
             type: string
           defaultForAZ:
