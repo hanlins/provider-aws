@@ -74,3 +74,6 @@ type CustomVPCEndpointParameters struct {
 	// +optional
 	RouteTableIDSelector *xpv1.Selector `json:"routeTableIdSelector,omitempty"`
 }
+
+// CustomVPCEndpointServiceConfigurationParameters are custom parameters for VPCEndpointServiceConfiguration.
+type CustomVPCEndpointServiceConfigurationParameters struct{}
