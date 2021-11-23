@@ -2378,6 +2378,8 @@ type PrivateDNSDetails struct {
 type PrivateDNSNameConfiguration struct {
 	Name *string `json:"name,omitempty"`
 
+	State *string `json:"state,omitempty"`
+
 	Type *string `json:"type_,omitempty"`
 
 	Value *string `json:"value,omitempty"`
@@ -2843,10 +2845,19 @@ type ServiceConfiguration struct {
 	NetworkLoadBalancerARNs []*string `json:"networkLoadBalancerARNs,omitempty"`
 
 	PrivateDNSName *string `json:"privateDNSName,omitempty"`
+	// Information about the private DNS name for the service endpoint. For more
+	// information about these parameters, see VPC Endpoint Service Private DNS
+	// Name Verification (https://docs.aws.amazon.com/vpc/latest/userguide/ndpoint-services-dns-validation.html)
+	// in the Amazon Virtual Private Cloud User Guide.
+	PrivateDNSNameConfiguration *PrivateDNSNameConfiguration `json:"privateDNSNameConfiguration,omitempty"`
 
 	ServiceID *string `json:"serviceID,omitempty"`
 
 	ServiceName *string `json:"serviceName,omitempty"`
+
+	ServiceState *string `json:"serviceState,omitempty"`
+
+	ServiceType []*ServiceTypeDetail `json:"serviceType,omitempty"`
 
 	Tags []*Tag `json:"tags,omitempty"`
 }
@@ -2864,13 +2875,21 @@ type ServiceDetail struct {
 
 	PrivateDNSName *string `json:"privateDNSName,omitempty"`
 
+	PrivateDNSNameVerificationState *string `json:"privateDNSNameVerificationState,omitempty"`
+
 	ServiceID *string `json:"serviceID,omitempty"`
 
 	ServiceName *string `json:"serviceName,omitempty"`
 
+	ServiceType []*ServiceTypeDetail `json:"serviceType,omitempty"`
+
 	Tags []*Tag `json:"tags,omitempty"`
 
 	VPCEndpointPolicySupported *bool `json:"vpcEndpointPolicySupported,omitempty"`
+}
+
+type ServiceTypeDetail struct {
+	ServiceType *string `json:"serviceType,omitempty"`
 }
 
 type SlotDateTimeRangeRequest struct {
