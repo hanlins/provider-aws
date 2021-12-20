@@ -20,6 +20,14 @@ import (
 	xpv1 "github.com/crossplane/crossplane-runtime/apis/common/v1"
 )
 
+// CustomVPCEndpointServiceConfigurationParameters contains the additional fields
+// for VPCEndpointServiceConfigurationParameter.
+type CustomVPCEndpointServiceConfigurationParameters struct {
+	// Metadata tagging key value pairs
+	// +optional
+	Tags []Tag `json:"tags,omitempty"`
+}
+
 // CustomVolumeParameters contains the additional fields for VolumeParameters.
 type CustomVolumeParameters struct {
 	// The identifier of the AWS Key Management Service (AWS KMS) customer master

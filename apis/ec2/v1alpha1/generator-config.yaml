@@ -48,6 +48,7 @@ ignore:
     - TransitGatewayRoute
     - VpcEndpointConnectionNotification
     - VpcEndpointServiceConfiguration
+    - VpcEndpoint
     - Vpc
     - VpcCidrBlock
     - VpnConnectionRoute
@@ -101,6 +102,8 @@ ignore:
     - CreateVpcEndpointInput.DryRun
     - CreateVpcEndpointInput.RouteTableIds
     - Subnet.AvailableIpAddressCount
+    - CreateVpcEndpointServiceConfigurationInput.DryRun
+    - CreateVpcEndpointServiceConfigurationInput.ClientToken
 resources:
   Volume:
     exceptions:
